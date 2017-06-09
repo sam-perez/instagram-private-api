@@ -51,6 +51,16 @@ Account.prototype.parseParams = function (json) {
         hash.externalUrl = json.external_url;
     if(_.isNumber(json.mutual_followers_count))    
         hash.mutualFollowersCount = json.mutual_followers_count;
+    
+    hash.public_email = json.public_email;
+    hash.public_phone_number = json.public_phone_number;
+    hash.contact_phone_number = json.contact_phone_number;
+    hash.city_name = json.city_name;
+    hash.zip = json.zip;
+    hash.address_street = json.address_street;
+    hash.latitude = json.latitude;
+    hash.longitude = json.longitude;
+
     return hash;
 };
 
